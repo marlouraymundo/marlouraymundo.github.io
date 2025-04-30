@@ -11,3 +11,15 @@ function toggleNav(){
     $("nav").fadeIn().css('display', 'flex');
   }
 }
+
+// when clicking + or ☰ button
+$("button").click(function(){
+  // when clicking ☰ button, open nav
+  if($("header").hasClass("open")){
+    toggleNav();
+  }
+  // when clicking + button, open header
+  else{
+    $("header").addClass("open");
+  }
+});
