@@ -23,3 +23,21 @@ $("button").click(function(){
     $("header").addClass("open");
   }
 });
+
+// close nav
+$("#nav-close").click(function(){
+  toggleNav();
+});
+
+// scroll to sections
+$("nav li").click(function(){
+  // get index of clicked li and select according section
+  var index = $(this).index();
+  var target = $("content section").eq(index);
+  
+  toggleNav();
+  
+  $('html,body').delay(300).animate({
+    scrollTop: target.offset().top
+  }, 500);
+});
