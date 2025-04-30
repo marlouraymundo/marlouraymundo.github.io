@@ -4,7 +4,7 @@ $("button").click(function(){
     $("header").addClass("open");
   }
   else if($("header").hasClass("open")){
-    $("header").addClass("close");
+    $("header").addClass("");
   }
 });
 
