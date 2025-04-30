@@ -67,6 +67,11 @@ header button:before {
   opacity: 1;
   left: 53px;
 }
+header button:after {
+  content: "";
+  opacity: 0;
+  left: 0;
+}
 header .triangle {
   position: absolute;
   z-index: 1;
@@ -92,6 +97,12 @@ header.open .triangle.left {
 }
 header.open .triangle.right {
   clip-path: polygon(100% 0, 100% 0, 100% 100%);
+}
+header.open button {
+  left: 40px;
+  bottom: 40px;
+  width: 50px;
+  border-radius: 50%;
 }
 header.open button:before {
   opacity: 0;

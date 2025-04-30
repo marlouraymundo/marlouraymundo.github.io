@@ -3,5 +3,8 @@ $("button").click(function(){
   if(!$("header").hasClass("open")){
     $("header").addClass("open");
   }
+  else if($("header").hasClass("open")){
+    $("header").addClass("close");
+  }
 });
 
