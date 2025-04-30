@@ -67,11 +67,6 @@ header button:before {
   opacity: 1;
   left: 53px;
 }
-header button:after {
-  content: "";
-  opacity: 0;
-  left: 0;
-}
 header .triangle {
   position: absolute;
   z-index: 1;
